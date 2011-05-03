@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+/*
+*	※Licence: CC3.0 
+*	http://creativecommons.org/licenses/by/3.0/deed.ja
+*
+*	Title: Bazooka - Class
+*	URI: http://vicuna.jp/
+*	Last Modified: 2007-11-1
+*	Author: wu
+*/
+
+
+/*--------------------------------------
+	.pager
+---------------------------------------*/
+
+/*	ul.pager (Newer|Older)
+-----------------------------*/
+
+ul.pager {
+	text-align: center;
+}
+
+ul.pager li {
+	display: inline;
+}
+
+ul.pager li.newer:before {
+	content: "<< ";
+}
+
+ul.pager li.older:after {
+	content: " >>";
+}
+
+/*	p.pagerNum (1|2|3|4)
+-----------------------------*/
+
+p.pagerNum {
+	text-align: center;
+}
+
+p.pagerNum a {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+p.pagerNum strong {
+
+}
+
+/*--------------------------------------
+	.count
+---------------------------------------*/
+
+.count {
+	color: #999;
+}
+
+/*--------------------------------------
+	.feed
+---------------------------------------*/
+
+li.atom,
+li.rss {
+	list-style-type: none;
+}
+
+li.atom a,
+li.rss a {
+	padding-left: 20px;
+	background-image: url(images/icon/icon_feed.gif);
+	background-repeat: no-repeat;
+	background-position: 0 center;
+}
+
+li.atom a:hover,
+li.rss a:hover {
+	background-image: url(images/icon/icon_feed.gif);
+}
+
+/*--------------------------------------
+	dl.data
+---------------------------------------*/
+
+dl.data {
+	padding: 0;
+	border-left: 5px solid #ddd;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee!important;
+}
+
+dl.data dt {
+	margin: 0;
+	padding: 0.3em 0 0.1em 1em;
+	border-top: 1px solid #eee;
+	width: 8em;
+	float: left;
+	color: #333;
+}
+	
+dl.data dd {
+	margin: 0 0 0 8em;
+	padding: 0.3em 1em;
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+	color: #999;
+}
+
+/*--------------------------------------
+	float
+---------------------------------------*/
+
+.img_L {
+	margin-right: 1em!important;
+	margin-top: 1em!important;
+	float: left;
+}
+
+.img_R {
+	margin-left: 1em!important;
+	margin-top: 1em!important;
+	float: right;
+}
+
+.clear {
+	display: block;
+	clear: both;
+	line-height: 0;
+}
+
+/*--------------------------------------
+	Photo thumbnail
+---------------------------------------*/
+
+ul.thumb {
+	overflow: auto;
+}
+
+ul.thumb li {
+	margin: 5px 0 0 5px;
+	border: 1px solid #333;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	width: 70px; /* Pictures height */
+	background-color: #666;
+}
+
+ul.thumb li a {
+	border: none;
+	text-decoration: none;
+}
+
+ul.thumb li a img {
+	border: none;
+}
+
+/*--------------------------------------
+	Tag Cloud
+---------------------------------------*/
+
+ul.tagCloud {
+	marin: 0;
+	padding: 0.5em 10px;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	text-align:center;
+}
+
+ul.tagCloud li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%; /* ここで相対的に文字サイズを変更 */
+}
+
+ul.tagCloud li a {
+	padding: 0 5px;
+	border: 1px solid #eee;
+	position: relative;
+	line-height: 1;
+	text-decoration: none;
+	background-color: #fff;
+}
+
+ul.tagCloud li.level1 a {
+	z-index: 6;
+	font-size: 167%;
+	color: #424242;
+}
+
+ul.tagCloud li.level2 a {
+	top: 5px;
+	z-index: 5;
+	font-size: 136%;
+	color: #5e5e5e;
+}
+
+ul.tagCloud li.level3 a {
+	font-size: 114%;
+	color: #7a7a7a;
+	z-index: 4;
+}
+
+ul.tagCloud li.level4 a {
+	top: 5px;
+	z-index: 3;
+	font-size: 100%;
+	color: #979797;
+}
+
+ul.tagCloud li.level5 a {
+	font-size: 100%;
+	color: #b3b3b3;
+	z-index: 2;
+}
+
+ul.tagCloud li.level6 a {
+	z-index: 1;
+	font-size: 70%;
+	color: #cfcfcf;
+}
+
+/* On Mouse */
+ul.tagCloud li a:hover {
+	border-color: #666;
+	z-index: 10;
+	color: #000;
+	background-color: #eee;
+}
+
+/*--------------------------------------
+	Headline
+---------------------------------------*/
+
+dl.headline {
+	margin: 0 20px 1em;
+}
+
+dl.headline dt {
+	font-size: 114%;
+	margin-bottom: 0;
+}
+
+dl.headline dt span.date {
+	font-size: 77%;
+	color: #aaa;
+}
+
+dl.headline dd {
+	margin: 0 10px 1em 10px;
+}
+
+dl.headline dd ul {
+	margin: 0;
+	padding-bottom: 1.2em;
+	list-style-type: none;
+	list-style-position: outside;
+	border-bottom: 1px solid #eee;
+}
+
+dl.headline dd ul li {
+	margin: 0.3em 5px 0.3em 0;
+	display: inline;
+	font-size: 92%;
+	color: green;
+}
+
+dl.headline dd ul li.author span.name {
+	color: #333;
+}
+
+dl.headline dd ul li.category a,
+dl.headline dd ul li.tag a {
+	color: #aaa;
+	text-decoration: none;
+}
+
+dl.headline dd ul li.tag a {
+
+}
+
+dl.headline dd ul li.textBody {
+	display: block;
+	font-size: 100%;
+	color: #333;
+}
+
+/*--------------------------------------
+	.admin
+---------------------------------------*/
+
+.admin a {
+	padding: 0 10px 0 25px;
+	text-decoration: none;
+	color: #f65472;
+	background: url(images/icon/icon_edit.gif) 5px 3px no-repeat;
+}
+
+.admin a:hover {
+	color: #953844;
+}
+
+/*--------------------------------------
+	clearFix
+---------------------------------------*/
+
+ul#globalNavi,
+div#utilities,
+.textBody,
+.entry,
+ul.flip {
+	_height: 1px;
+	min-height: 1px;
+}
+
+ul#globalNavi:after,
+div#utilities:after,
+.textBody:after,
+ul.flip:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+/* for MacIE5 \*//*/
+ul#globalNavi,
+div#utilities,
+.textBody,
+ul.flip {
+	height: auto;
+	overflow: hidden;
+}
+/* end */
